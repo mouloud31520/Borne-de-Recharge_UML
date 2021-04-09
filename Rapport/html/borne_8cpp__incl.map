@@ -1,0 +1,18 @@
+<map id="C:/Users/zimou/Desktop/c++/projet_uml_c++/borne.cpp" name="C:/Users/zimou/Desktop/c++/projet_uml_c++/borne.cpp">
+<area shape="rect" id="node1" title=" " alt="" coords="416,5,620,47"/>
+<area shape="rect" id="node2" title=" " alt="" coords="738,244,810,271"/>
+<area shape="rect" id="node3" title=" " alt="" coords="25,319,147,345"/>
+<area shape="rect" id="node4" title=" " alt="" coords="640,319,761,345"/>
+<area shape="rect" id="node5" href="$lecteurcarte_8h.html" title="La lecture de la carte." alt="" coords="467,95,569,121"/>
+<area shape="rect" id="node11" href="$base__client_8h.html" title="Gestion de la base client." alt="" coords="382,169,481,196"/>
+<area shape="rect" id="node6" title=" " alt="" coords="745,169,811,196"/>
+<area shape="rect" id="node7" title=" " alt="" coords="544,244,612,271"/>
+<area shape="rect" id="node8" title=" " alt="" coords="295,244,351,271"/>
+<area shape="rect" id="node9" title=" " alt="" coords="376,244,441,271"/>
+<area shape="rect" id="node10" title=" " alt="" coords="465,244,520,271"/>
+<area shape="rect" id="node12" href="$generateur__save_8h.html" title="Gestion du generateur save." alt="" coords="129,169,256,196"/>
+<area shape="rect" id="node13" href="$bouton_8h.html" title="Detection des appuit sur les boutons." alt="" coords="149,244,221,271"/>
+<area shape="rect" id="node14" href="$prise_8h.html" title="Gestion des prises." alt="" coords="886,169,947,196"/>
+<area shape="rect" id="node15" href="$timer_8h.html" title="Gestion du timer." alt="" coords="607,169,669,196"/>
+<area shape="rect" id="node16" href="$voyants_8h.html" title="Gestion d&#39;allumage des voyants." alt="" coords="47,244,125,271"/>
+</map>

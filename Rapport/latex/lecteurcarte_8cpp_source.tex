@@ -1,0 +1,146 @@
+\hypertarget{lecteurcarte_8cpp_source}{}\doxysection{lecteurcarte.\+cpp}
+\label{lecteurcarte_8cpp_source}\index{C:/Users/zimou/Desktop/c++/projet\_uml\_c++/lecteurcarte.cpp@{C:/Users/zimou/Desktop/c++/projet\_uml\_c++/lecteurcarte.cpp}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001 }
+\DoxyCodeLine{00011 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{lecteurcarte_8h}{lecteurcarte.h}}"{}}}
+\DoxyCodeLine{00012 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{base__client_8h}{base\_client.h}}"{}}}
+\DoxyCodeLine{00013 }
+\DoxyCodeLine{00014 }
+\DoxyCodeLine{00015 \textcolor{comment}{/*-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/*/}}
+\DoxyCodeLine{\Hypertarget{lecteurcarte_8cpp_source_l00016}\mbox{\hyperlink{class_lecteur_carte_abbbb461e7a4e40468f27542a9cc65a22}{00016}} \mbox{\hyperlink{class_lecteur_carte_abbbb461e7a4e40468f27542a9cc65a22}{LecteurCarte::LecteurCarte}}()}
+\DoxyCodeLine{00017 \{}
+\DoxyCodeLine{00018     initialisations\_ports();}
+\DoxyCodeLine{00019     cout << \textcolor{stringliteral}{"{}Initialisation des ports reussi"{}} <<endl;}
+\DoxyCodeLine{00020     io=acces\_memoire(\&shmid);}
+\DoxyCodeLine{00021     \textcolor{keywordflow}{if}(io==NULL)}
+\DoxyCodeLine{00022     cout<<\textcolor{stringliteral}{"{}Erreur d'initialisation"{}}<<endl;}
+\DoxyCodeLine{00023 }
+\DoxyCodeLine{00024 \}}
+\DoxyCodeLine{00025 }
+\DoxyCodeLine{00026 \textcolor{comment}{/*-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/*/}}
+\DoxyCodeLine{\Hypertarget{lecteurcarte_8cpp_source_l00027}\mbox{\hyperlink{class_lecteur_carte_a90e4f75fb492935ebaf5f908173763af}{00027}} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_lecteur_carte_a90e4f75fb492935ebaf5f908173763af}{LecteurCarte::lire\_carte}}()}
+\DoxyCodeLine{00028 \{}
+\DoxyCodeLine{00029 }
+\DoxyCodeLine{00030 \textcolor{keywordtype}{int} numero\_client;}
+\DoxyCodeLine{00031 }
+\DoxyCodeLine{00032 }
+\DoxyCodeLine{00033     cout<<\textcolor{stringliteral}{"{}/***************************/"{}}<<endl;}
+\DoxyCodeLine{00034     cout<<\textcolor{stringliteral}{"{}Entrer le Numéro de votre Badge SVP"{}}<< endl;}
+\DoxyCodeLine{00035     cout<<\textcolor{stringliteral}{"{}/***************************/"{}}<<endl;}
+\DoxyCodeLine{00036 }
+\DoxyCodeLine{00037     cin >> numero\_carte ;}
+\DoxyCodeLine{00038     T.\mbox{\hyperlink{classtimer_a760e6904b6e430cf5cc8270ae3028cb0}{initialiser}}();}
+\DoxyCodeLine{00039 }
+\DoxyCodeLine{00040     cout<<\textcolor{stringliteral}{"{}/***************************/"{}}<<endl;}
+\DoxyCodeLine{00041     cout<<\textcolor{stringliteral}{"{}Numéro de Badge =  "{}}<< numero\_carte << endl;}
+\DoxyCodeLine{00042     cout<<\textcolor{stringliteral}{"{}/***************************/"{}}<<endl;}
+\DoxyCodeLine{00043 }
+\DoxyCodeLine{00044     \textcolor{keywordflow}{if}(\mbox{\hyperlink{class_lecteur_carte_a8547fd2666ffcbf93a9e8146085ed637}{lecture\_base}}.\mbox{\hyperlink{classbase__clients_a90f0ccbdbc34a1f7931d134049f3c74d}{authentifier}}(numero\_carte)==1)}
+\DoxyCodeLine{00045     \{}
+\DoxyCodeLine{00046         numero\_client=numero\_carte;}
+\DoxyCodeLine{00047 }
+\DoxyCodeLine{00048         cout<<\textcolor{stringliteral}{"{}/***************************/"{}}<<endl;}
+\DoxyCodeLine{00049         cout<<\textcolor{stringliteral}{"{}Authentification OK "{}}<< endl;}
+\DoxyCodeLine{00050         cout<<\textcolor{stringliteral}{"{}/***************************/"{}}<<endl;}
+\DoxyCodeLine{00051 }
+\DoxyCodeLine{00052         V.\mbox{\hyperlink{classvoyants_afc141b1a01b44acc6769ec52da51ae0b}{blink\_charge}}();}
+\DoxyCodeLine{00053         }
+\DoxyCodeLine{00054 }
+\DoxyCodeLine{00055         \textcolor{keywordflow}{while}((T.\mbox{\hyperlink{classtimer_a1ace143c3ef9b80ba80ead2d0a7f07e2}{timer\_valeur}}()) < 20 \&\& (BT.\mbox{\hyperlink{classbouton_a0585ff8c54445a58a0ffc9c5c93f2580}{charge}}()== 0) \&\& (BT.\mbox{\hyperlink{classbouton_a8876eb02e83fb5373c5e89df1ff98094}{stop}}() == 0))\{\}}
+\DoxyCodeLine{00056 }
+\DoxyCodeLine{00057         \textcolor{keywordflow}{if}(BT.\mbox{\hyperlink{classbouton_a8876eb02e83fb5373c5e89df1ff98094}{stop}}() == 1)}
+\DoxyCodeLine{00058             \{}
+\DoxyCodeLine{00059 }
+\DoxyCodeLine{00060             io-\/>bouton\_stop = 0;}
+\DoxyCodeLine{00061 }
+\DoxyCodeLine{00062             \}}
+\DoxyCodeLine{00063 }
+\DoxyCodeLine{00064         \textcolor{keywordflow}{if}(T.\mbox{\hyperlink{classtimer_a1ace143c3ef9b80ba80ead2d0a7f07e2}{timer\_valeur}}() >= 20)}
+\DoxyCodeLine{00065             \{}
+\DoxyCodeLine{00066 }
+\DoxyCodeLine{00067             cout<<\textcolor{stringliteral}{"{}Temps écoulé"{}}<<endl;}
+\DoxyCodeLine{00068             liberation\_ports();}
+\DoxyCodeLine{00069             initialisations\_ports();}
+\DoxyCodeLine{00070 }
+\DoxyCodeLine{00071             \}}
+\DoxyCodeLine{00072         }
+\DoxyCodeLine{00073         \textcolor{keywordflow}{if}(BT.\mbox{\hyperlink{classbouton_a0585ff8c54445a58a0ffc9c5c93f2580}{charge}}()==1)\{}
+\DoxyCodeLine{00074 }
+\DoxyCodeLine{00075                 io-\/>bouton\_charge = 0;}
+\DoxyCodeLine{00076                 io-\/>led\_dispo=OFF;}
+\DoxyCodeLine{00077                 io-\/>led\_charge=VERT;}
+\DoxyCodeLine{00078 }
+\DoxyCodeLine{00079                 cout<<\textcolor{stringliteral}{"{}/***************************/"{}}<<endl;     }
+\DoxyCodeLine{00080                 cout<<\textcolor{stringliteral}{"{}Votre demande de charge Véhicule est Accepté "{}}<<endl;    }
+\DoxyCodeLine{00081                 cout<<\textcolor{stringliteral}{"{}/***************************/"{}}<<endl;}
+\DoxyCodeLine{00082                 cout<<\textcolor{stringliteral}{"{}Appuyer sur prise pour Brancher votre véhicule"{}}<<endl;   }
+\DoxyCodeLine{00083     }
+\DoxyCodeLine{00084                 G.\mbox{\hyperlink{classgenerateur__save_afcd2ef2afe23c5c0a31d1786dcfd11e7}{charger}}();}
+\DoxyCodeLine{00085                 cout<<\textcolor{stringliteral}{"{}/***************************/"{}}<<endl;}
+\DoxyCodeLine{00086                 cout<<\textcolor{stringliteral}{"{}Entrer le numero de votre Badge"{}}<< endl;}
+\DoxyCodeLine{00087                 cin >> numero\_carte ;}
+\DoxyCodeLine{00088                 cout<<\textcolor{stringliteral}{"{}/***************************/"{}}<<endl;}
+\DoxyCodeLine{00089 }
+\DoxyCodeLine{00090                 \textcolor{keywordflow}{while}(numero\_carte!=numero\_client)}
+\DoxyCodeLine{00091                 \{}
+\DoxyCodeLine{00092                     usleep(1000000);}
+\DoxyCodeLine{00093                     io-\/>led\_defaut=ROUGE;}
+\DoxyCodeLine{00094                     usleep(1000000);}
+\DoxyCodeLine{00095                     io-\/>led\_defaut=OFF;}
+\DoxyCodeLine{00096                     cout<<\textcolor{stringliteral}{"{}Résseyer d'Entrer le Numero de Votre Badge"{}}<< endl;}
+\DoxyCodeLine{00097                     cin >> numero\_carte ;}
+\DoxyCodeLine{00098                         }
+\DoxyCodeLine{00099                 \}}
+\DoxyCodeLine{00100            }
+\DoxyCodeLine{00101                 G.\mbox{\hyperlink{classgenerateur__save_ad3883dec46e1e3cc8df53645fefcf493}{deconnecter}}();}
+\DoxyCodeLine{00102 }
+\DoxyCodeLine{00103              }
+\DoxyCodeLine{00104                 cout<<\textcolor{stringliteral}{"{}Appuyer sur Prise pour Débrancher votre  Véhicule"{}}<<endl;}
+\DoxyCodeLine{00105                 cout<<\textcolor{stringliteral}{"{}/***************************/"{}}<<endl;}
+\DoxyCodeLine{00106 }
+\DoxyCodeLine{00107                 \textcolor{keywordflow}{while}(G.\mbox{\hyperlink{classgenerateur__save_a66d2036681c611dd116e89187a3f365f}{tension}}()!=12)\{\}}
+\DoxyCodeLine{00108 }
+\DoxyCodeLine{00109                 P.\mbox{\hyperlink{classprise_afabd7af7fecbc9a23012a2d8d2b6e83c}{verouiller\_trappe}}();}
+\DoxyCodeLine{00110                 io-\/>led\_prise=OFF;              }
+\DoxyCodeLine{00111                 io-\/>led\_dispo=VERT;}
+\DoxyCodeLine{00112     }
+\DoxyCodeLine{00113                 \}   }
+\DoxyCodeLine{00114         \}   }
+\DoxyCodeLine{00115 }
+\DoxyCodeLine{00116     \textcolor{keywordflow}{else}}
+\DoxyCodeLine{00117     \{}
+\DoxyCodeLine{00118 }
+\DoxyCodeLine{00119     cout<<\textcolor{stringliteral}{"{}/***************************/"{}}<<endl;}
+\DoxyCodeLine{00120     cout<<\textcolor{stringliteral}{"{}Error, Veuillez Résseyer ! "{}} << endl;}
+\DoxyCodeLine{00121     cout<<\textcolor{stringliteral}{"{}/***************************/"{}}<<endl;}
+\DoxyCodeLine{00122 }
+\DoxyCodeLine{00123     liberation\_ports();}
+\DoxyCodeLine{00124     initialisations\_ports();}
+\DoxyCodeLine{00125     V.\mbox{\hyperlink{classvoyants_ad94597191e93dbd2a6ff5e3ff9fd1234}{blink\_chargeR}}();}
+\DoxyCodeLine{00126 }
+\DoxyCodeLine{00127     \}   }
+\DoxyCodeLine{00128                 }
+\DoxyCodeLine{00129         }
+\DoxyCodeLine{00130 \}}
+\DoxyCodeLine{00131 }
+\DoxyCodeLine{00132 }
+\DoxyCodeLine{00133 \textcolor{comment}{/*-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/*/}}
+\DoxyCodeLine{00134 }
+\DoxyCodeLine{\Hypertarget{lecteurcarte_8cpp_source_l00135}\mbox{\hyperlink{class_lecteur_carte_af26760b222fb8ce5cce9a467a82ee7da}{00135}} \textcolor{keywordtype}{int} \mbox{\hyperlink{class_lecteur_carte_af26760b222fb8ce5cce9a467a82ee7da}{LecteurCarte::get\_numero\_carte}}()}
+\DoxyCodeLine{00136 \{}
+\DoxyCodeLine{00137     \textcolor{keywordflow}{return} numero\_carte;}
+\DoxyCodeLine{00138 \}}
+\DoxyCodeLine{00139 \textcolor{comment}{/*-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/*/}}
+\DoxyCodeLine{\Hypertarget{lecteurcarte_8cpp_source_l00140}\mbox{\hyperlink{class_lecteur_carte_aa95d95417518eda631e52428302637fc}{00140}} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_lecteur_carte_aa95d95417518eda631e52428302637fc}{LecteurCarte::ajout}}(\textcolor{keywordtype}{int} a)}
+\DoxyCodeLine{00141 \{}
+\DoxyCodeLine{00142   \mbox{\hyperlink{class_lecteur_carte_a8547fd2666ffcbf93a9e8146085ed637}{lecture\_base}}.\mbox{\hyperlink{classbase__clients_a0148fa053f3f95a491e8b569c5d09593}{ajouter\_client}}(a);}
+\DoxyCodeLine{00143 \}}
+\DoxyCodeLine{00144 \textcolor{comment}{/*-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/*/}}
+\DoxyCodeLine{\Hypertarget{lecteurcarte_8cpp_source_l00145}\mbox{\hyperlink{class_lecteur_carte_ad711680ca62caa5efa26f73f70fe9839}{00145}} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_lecteur_carte_ad711680ca62caa5efa26f73f70fe9839}{LecteurCarte::suppr}}(\textcolor{keywordtype}{int} a)}
+\DoxyCodeLine{00146 \{}
+\DoxyCodeLine{00147 \mbox{\hyperlink{class_lecteur_carte_a8547fd2666ffcbf93a9e8146085ed637}{lecture\_base}}.\mbox{\hyperlink{classbase__clients_a6259873e55939345853ed85bca3b9be1}{supprimer\_client}}(a);}
+\DoxyCodeLine{00148 \}}
+\DoxyCodeLine{00149 }
+
+\end{DoxyCode}

@@ -1,0 +1,238 @@
+\hypertarget{classgenerateur__save}{}\doxysection{generateur\+\_\+save Class Reference}
+\label{classgenerateur__save}\index{generateur\_save@{generateur\_save}}
+
+
+{\ttfamily \#include $<$generateur\+\_\+save.\+h$>$}
+
+
+
+Collaboration diagram for generateur\+\_\+save\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=182pt]{classgenerateur__save__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classgenerateur__save_a0426c589f54903e4ea5765a2cf70a8b4}{generateur\+\_\+save}} ()
+\begin{DoxyCompactList}\small\item\em Constructeur. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classgenerateur__save_aa6d167cc0f2747022428e963fd2d117a}{mef}} ()
+\begin{DoxyCompactList}\small\item\em gestion de la machine a etat fini \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{classgenerateur__save_a66d2036681c611dd116e89187a3f365f}{tension}} ()
+\begin{DoxyCompactList}\small\item\em obtention de la valeur de la tension \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classgenerateur__save_afcd2ef2afe23c5c0a31d1786dcfd11e7}{charger}} ()
+\begin{DoxyCompactList}\small\item\em lancemment de la MEF \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classgenerateur__save_a001b7830a5199462656a7a6df6adbd33}{ouvrir\+\_\+\+AC}} ()
+\begin{DoxyCompactList}\small\item\em ouvertur du contacteur AC \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classgenerateur__save_a8877afbf0536685d6c6f97066b39fe0e}{fermer\+\_\+\+AC}} ()
+\begin{DoxyCompactList}\small\item\em fermeture du contacteur AC \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classgenerateur__save_ad3883dec46e1e3cc8df53645fefcf493}{deconnecter}} ()
+\begin{DoxyCompactList}\small\item\em deconecter le vehicule de la prise \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classgenerateur__save_a2d6918edf51ed5529e4c6638f001a25d}{generer\+\_\+pwm}} (pwm type)
+\begin{DoxyCompactList}\small\item\em generateur de PWM \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+
+
+Definition at line \mbox{\hyperlink{generateur__save_8h_source_l00028}{28}} of file \mbox{\hyperlink{generateur__save_8h_source}{generateur\+\_\+save.\+h}}.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classgenerateur__save_a0426c589f54903e4ea5765a2cf70a8b4}\label{classgenerateur__save_a0426c589f54903e4ea5765a2cf70a8b4}} 
+\index{generateur\_save@{generateur\_save}!generateur\_save@{generateur\_save}}
+\index{generateur\_save@{generateur\_save}!generateur\_save@{generateur\_save}}
+\doxysubsubsection{\texorpdfstring{generateur\_save()}{generateur\_save()}}
+{\footnotesize\ttfamily generateur\+\_\+save\+::generateur\+\_\+save (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Constructeur. 
+
+Constructeur de la classe \mbox{\hyperlink{classgenerateur__save}{generateur\+\_\+save}} 
+
+Definition at line \mbox{\hyperlink{generateur__save_8cpp_source_l00016}{16}} of file \mbox{\hyperlink{generateur__save_8cpp_source}{generateur\+\_\+save.\+cpp}}.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classgenerateur__save_afcd2ef2afe23c5c0a31d1786dcfd11e7}\label{classgenerateur__save_afcd2ef2afe23c5c0a31d1786dcfd11e7}} 
+\index{generateur\_save@{generateur\_save}!charger@{charger}}
+\index{charger@{charger}!generateur\_save@{generateur\_save}}
+\doxysubsubsection{\texorpdfstring{charger()}{charger()}}
+{\footnotesize\ttfamily void generateur\+\_\+save\+::charger (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+lancemment de la MEF 
+
+Methode qui lance la charge de la batterie 
+
+Definition at line \mbox{\hyperlink{generateur__save_8cpp_source_l00032}{32}} of file \mbox{\hyperlink{generateur__save_8cpp_source}{generateur\+\_\+save.\+cpp}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classgenerateur__save_afcd2ef2afe23c5c0a31d1786dcfd11e7_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classgenerateur__save_afcd2ef2afe23c5c0a31d1786dcfd11e7_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classgenerateur__save_ad3883dec46e1e3cc8df53645fefcf493}\label{classgenerateur__save_ad3883dec46e1e3cc8df53645fefcf493}} 
+\index{generateur\_save@{generateur\_save}!deconnecter@{deconnecter}}
+\index{deconnecter@{deconnecter}!generateur\_save@{generateur\_save}}
+\doxysubsubsection{\texorpdfstring{deconnecter()}{deconnecter()}}
+{\footnotesize\ttfamily void generateur\+\_\+save\+::deconnecter (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+deconecter le vehicule de la prise 
+
+Methode qui permet d\textquotesingle{}allumer la led de la trappe et d\textquotesingle{}etteindre celle de la charge comme signe de deconection du vehicule 
+
+Definition at line \mbox{\hyperlink{generateur__save_8cpp_source_l00047}{47}} of file \mbox{\hyperlink{generateur__save_8cpp_source}{generateur\+\_\+save.\+cpp}}.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classgenerateur__save_ad3883dec46e1e3cc8df53645fefcf493_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classgenerateur__save_a8877afbf0536685d6c6f97066b39fe0e}\label{classgenerateur__save_a8877afbf0536685d6c6f97066b39fe0e}} 
+\index{generateur\_save@{generateur\_save}!fermer\_AC@{fermer\_AC}}
+\index{fermer\_AC@{fermer\_AC}!generateur\_save@{generateur\_save}}
+\doxysubsubsection{\texorpdfstring{fermer\_AC()}{fermer\_AC()}}
+{\footnotesize\ttfamily void generateur\+\_\+save\+::fermer\+\_\+\+AC (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+fermeture du contacteur AC 
+
+Methode qui permet de fermer le contacteur AC 
+
+Definition at line \mbox{\hyperlink{generateur__save_8cpp_source_l00042}{42}} of file \mbox{\hyperlink{generateur__save_8cpp_source}{generateur\+\_\+save.\+cpp}}.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classgenerateur__save_a8877afbf0536685d6c6f97066b39fe0e_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classgenerateur__save_a2d6918edf51ed5529e4c6638f001a25d}\label{classgenerateur__save_a2d6918edf51ed5529e4c6638f001a25d}} 
+\index{generateur\_save@{generateur\_save}!generer\_pwm@{generer\_pwm}}
+\index{generer\_pwm@{generer\_pwm}!generateur\_save@{generateur\_save}}
+\doxysubsubsection{\texorpdfstring{generer\_pwm()}{generer\_pwm()}}
+{\footnotesize\ttfamily void generateur\+\_\+save\+::generer\+\_\+pwm (\begin{DoxyParamCaption}\item[{pwm}]{type }\end{DoxyParamCaption})}
+
+
+
+generateur de PWM 
+
+Methode qui permet de controller la tension de commande 
+
+Definition at line \mbox{\hyperlink{generateur__save_8cpp_source_l00021}{21}} of file \mbox{\hyperlink{generateur__save_8cpp_source}{generateur\+\_\+save.\+cpp}}.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classgenerateur__save_a2d6918edf51ed5529e4c6638f001a25d_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classgenerateur__save_aa6d167cc0f2747022428e963fd2d117a}\label{classgenerateur__save_aa6d167cc0f2747022428e963fd2d117a}} 
+\index{generateur\_save@{generateur\_save}!mef@{mef}}
+\index{mef@{mef}!generateur\_save@{generateur\_save}}
+\doxysubsubsection{\texorpdfstring{mef()}{mef()}}
+{\footnotesize\ttfamily void generateur\+\_\+save\+::mef (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+gestion de la machine a etat fini 
+
+Methode qui permet de gerer la machine a etat represantante la charge de la batterie 
+
+Definition at line \mbox{\hyperlink{generateur__save_8cpp_source_l00055}{55}} of file \mbox{\hyperlink{generateur__save_8cpp_source}{generateur\+\_\+save.\+cpp}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classgenerateur__save_aa6d167cc0f2747022428e963fd2d117a_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classgenerateur__save_aa6d167cc0f2747022428e963fd2d117a_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classgenerateur__save_a001b7830a5199462656a7a6df6adbd33}\label{classgenerateur__save_a001b7830a5199462656a7a6df6adbd33}} 
+\index{generateur\_save@{generateur\_save}!ouvrir\_AC@{ouvrir\_AC}}
+\index{ouvrir\_AC@{ouvrir\_AC}!generateur\_save@{generateur\_save}}
+\doxysubsubsection{\texorpdfstring{ouvrir\_AC()}{ouvrir\_AC()}}
+{\footnotesize\ttfamily void generateur\+\_\+save\+::ouvrir\+\_\+\+AC (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+ouvertur du contacteur AC 
+
+Methode qui permet d\textquotesingle{}ouvrir le contacteur AC 
+
+Definition at line \mbox{\hyperlink{generateur__save_8cpp_source_l00037}{37}} of file \mbox{\hyperlink{generateur__save_8cpp_source}{generateur\+\_\+save.\+cpp}}.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classgenerateur__save_a001b7830a5199462656a7a6df6adbd33_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classgenerateur__save_a66d2036681c611dd116e89187a3f365f}\label{classgenerateur__save_a66d2036681c611dd116e89187a3f365f}} 
+\index{generateur\_save@{generateur\_save}!tension@{tension}}
+\index{tension@{tension}!generateur\_save@{generateur\_save}}
+\doxysubsubsection{\texorpdfstring{tension()}{tension()}}
+{\footnotesize\ttfamily float generateur\+\_\+save\+::tension (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+obtention de la valeur de la tension 
+
+Methode qui retourne la tension sur le fil pilote 
+
+Definition at line \mbox{\hyperlink{generateur__save_8cpp_source_l00027}{27}} of file \mbox{\hyperlink{generateur__save_8cpp_source}{generateur\+\_\+save.\+cpp}}.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classgenerateur__save_a66d2036681c611dd116e89187a3f365f_icgraph}
+\end{center}
+\end{figure}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/zimou/\+Desktop/c++/projet\+\_\+uml\+\_\+c++/\mbox{\hyperlink{generateur__save_8h}{generateur\+\_\+save.\+h}}\item 
+C\+:/\+Users/zimou/\+Desktop/c++/projet\+\_\+uml\+\_\+c++/\mbox{\hyperlink{generateur__save_8cpp}{generateur\+\_\+save.\+cpp}}\end{DoxyCompactItemize}

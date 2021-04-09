@@ -1,0 +1,85 @@
+\hypertarget{borne_8cpp_source}{}\doxysection{borne.\+cpp}
+\label{borne_8cpp_source}\index{C:/Users/zimou/Desktop/c++/projet\_uml\_c++/borne.cpp@{C:/Users/zimou/Desktop/c++/projet\_uml\_c++/borne.cpp}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001 }
+\DoxyCodeLine{00010 \textcolor{preprocessor}{\#include <iostream>}}
+\DoxyCodeLine{00011 \textcolor{preprocessor}{\#include "{}memoire\_borne.h"{}}}
+\DoxyCodeLine{00012 \textcolor{preprocessor}{\#include "{}donnees\_borne.h"{}}}
+\DoxyCodeLine{00013 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{lecteurcarte_8h}{lecteurcarte.h}}"{}}}
+\DoxyCodeLine{00014 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{base__client_8h}{base\_client.h}}"{}}}
+\DoxyCodeLine{00015 }
+\DoxyCodeLine{00016 }
+\DoxyCodeLine{00017 }
+\DoxyCodeLine{00018 \textcolor{keyword}{using namespace }std;}
+\DoxyCodeLine{00019 }
+\DoxyCodeLine{\Hypertarget{borne_8cpp_source_l00026}\mbox{\hyperlink{borne_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}{00026}} \textcolor{keywordtype}{int} \mbox{\hyperlink{borne_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}{main}}()}
+\DoxyCodeLine{00027 \{\textcolor{keywordtype}{int} choix;}
+\DoxyCodeLine{00028 \textcolor{keywordtype}{int} code; \textcolor{comment}{// le code  admin est: 1996 => pour  ajouter  ou supprimer un client}}
+\DoxyCodeLine{00029 \textcolor{keywordtype}{int} choix\_admin;}
+\DoxyCodeLine{00030 \textcolor{keywordtype}{int} num\_client;}
+\DoxyCodeLine{00031 }
+\DoxyCodeLine{00032 }
+\DoxyCodeLine{00033     \mbox{\hyperlink{class_lecteur_carte}{LecteurCarte}} lecteurcarte;}
+\DoxyCodeLine{00034 }
+\DoxyCodeLine{00035     \textcolor{keywordflow}{while} (1)}
+\DoxyCodeLine{00036     }
+\DoxyCodeLine{00037   \{}
+\DoxyCodeLine{00038     cout<<\textcolor{stringliteral}{"{}*****************************************"{}}<<endl;}
+\DoxyCodeLine{00039     cout<<\textcolor{stringliteral}{"{}BIENVENU"{}}<<endl;}
+\DoxyCodeLine{00040     cout<<\textcolor{stringliteral}{"{}Veillez choisir une option SVP"{}}<<endl;}
+\DoxyCodeLine{00041     cout<<\textcolor{stringliteral}{"{}1: Charger votre Véhicule"{}}<<endl;}
+\DoxyCodeLine{00042     cout<<\textcolor{stringliteral}{"{}2: Gérer la base clients"{}}<<endl;}
+\DoxyCodeLine{00043     cout<<\textcolor{stringliteral}{"{}*****************************************"{}}<<endl;}
+\DoxyCodeLine{00044     cout<<\textcolor{stringliteral}{"{}Quel est votre choix"{}}<<endl;}
+\DoxyCodeLine{00045     cin>> choix;}
+\DoxyCodeLine{00046     }
+\DoxyCodeLine{00047     \textcolor{keywordflow}{if} (choix ==1)}
+\DoxyCodeLine{00048     \{}
+\DoxyCodeLine{00049         lecteurcarte.\mbox{\hyperlink{class_lecteur_carte_a90e4f75fb492935ebaf5f908173763af}{lire\_carte}}();}
+\DoxyCodeLine{00050         cout<<\textcolor{stringliteral}{"{}AU REVOIR"{}}<<endl;}
+\DoxyCodeLine{00051         cout<<\textcolor{stringliteral}{"{}*****************************************"{}}<<endl;}
+\DoxyCodeLine{00052     \}}
+\DoxyCodeLine{00053     \textcolor{keywordflow}{if} (choix == 2)}
+\DoxyCodeLine{00054     \{}
+\DoxyCodeLine{00055     cout<<\textcolor{stringliteral}{"{}Veuillez Saisir Votre  Code d'Administrateur"{}}<<endl;}
+\DoxyCodeLine{00056     cin>>code;}
+\DoxyCodeLine{00057     \textcolor{keywordflow}{if} (code == 1996)}
+\DoxyCodeLine{00058     \{cout<<\textcolor{stringliteral}{"{}*****************************************"{}}<<endl;}
+\DoxyCodeLine{00059      cout<<\textcolor{stringliteral}{"{}ADMIN Reconnu"{}}<<endl;}
+\DoxyCodeLine{00060      cout<<\textcolor{stringliteral}{"{}Veillez choisir une option SVP"{}}<<endl;}
+\DoxyCodeLine{00061      cout<<\textcolor{stringliteral}{"{}1: Ajouter un client"{}}<<endl;}
+\DoxyCodeLine{00062      cout<<\textcolor{stringliteral}{"{}2: Supprimer un client "{}}<<endl;}
+\DoxyCodeLine{00063      cout<<\textcolor{stringliteral}{"{}*****************************************"{}}<<endl;}
+\DoxyCodeLine{00064      cout<<\textcolor{stringliteral}{"{}Quel est votre choix"{}}<<endl;}
+\DoxyCodeLine{00065      cin>>choix\_admin;}
+\DoxyCodeLine{00066       \textcolor{keywordflow}{if}(choix\_admin==1)}
+\DoxyCodeLine{00067             \{}
+\DoxyCodeLine{00068                 cout<<\textcolor{stringliteral}{"{}Entrer le numéro de votre Badge SVP"{}}<<endl;}
+\DoxyCodeLine{00069                 cin >> num\_client;}
+\DoxyCodeLine{00070                 lecteurcarte.\mbox{\hyperlink{class_lecteur_carte_aa95d95417518eda631e52428302637fc}{ajout}}(num\_client);}
+\DoxyCodeLine{00071                 cout<<\textcolor{stringliteral}{"{}Numero de la carte ajouter=  "{}}<< num\_client<< endl;}
+\DoxyCodeLine{00072                 cout<<\textcolor{stringliteral}{"{}Ajouter\_Numéro\_Client Reussi !"{}}<<endl;}
+\DoxyCodeLine{00073             \}}
+\DoxyCodeLine{00074 }
+\DoxyCodeLine{00075             \textcolor{keywordflow}{if}(choix\_admin==2)}
+\DoxyCodeLine{00076             \{}
+\DoxyCodeLine{00077                 cout<<\textcolor{stringliteral}{"{}Entrer le numero de votre badge SVP"{}}<<endl;}
+\DoxyCodeLine{00078                 cin >> num\_client;}
+\DoxyCodeLine{00079                 lecteurcarte.\mbox{\hyperlink{class_lecteur_carte_ad711680ca62caa5efa26f73f70fe9839}{suppr}}(num\_client);}
+\DoxyCodeLine{00080                 cout<<\textcolor{stringliteral}{"{}Supprimer\_Numéro\_Client Reussi !"{}}<<endl;}
+\DoxyCodeLine{00081                 }
+\DoxyCodeLine{00082             \}}
+\DoxyCodeLine{00083     \}}
+\DoxyCodeLine{00084 }
+\DoxyCodeLine{00085         \textcolor{keywordflow}{else}}
+\DoxyCodeLine{00086             \{}
+\DoxyCodeLine{00087                 cout<<\textcolor{stringliteral}{"{}Code Erroné"{}}<<endl;}
+\DoxyCodeLine{00088             \}}
+\DoxyCodeLine{00089     \}}
+\DoxyCodeLine{00090     }
+\DoxyCodeLine{00091    \}}
+\DoxyCodeLine{00092 }
+\DoxyCodeLine{00093 \}}
+
+\end{DoxyCode}

@@ -1,0 +1,34 @@
+\hypertarget{bouton_8cpp_source}{}\doxysection{bouton.\+cpp}
+\label{bouton_8cpp_source}\index{C:/Users/zimou/Desktop/c++/projet\_uml\_c++/bouton.cpp@{C:/Users/zimou/Desktop/c++/projet\_uml\_c++/bouton.cpp}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001 }
+\DoxyCodeLine{00011 \textcolor{preprocessor}{\#include <unistd.h>}}
+\DoxyCodeLine{00012 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{bouton_8h}{bouton.h}}"{}}}
+\DoxyCodeLine{00013 }
+\DoxyCodeLine{00014 \textcolor{comment}{/*-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/*/}}
+\DoxyCodeLine{\Hypertarget{bouton_8cpp_source_l00015}\mbox{\hyperlink{classbouton_a0572615d25c03bb5a7b2f125baba57b6}{00015}} \mbox{\hyperlink{classbouton_a0572615d25c03bb5a7b2f125baba57b6}{bouton::bouton}}()}
+\DoxyCodeLine{00016 \{}
+\DoxyCodeLine{00017     io=acces\_memoire(\&shmid);}
+\DoxyCodeLine{00018 \}}
+\DoxyCodeLine{00019 \textcolor{comment}{/*-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/*/}}
+\DoxyCodeLine{\Hypertarget{bouton_8cpp_source_l00020}\mbox{\hyperlink{classbouton_a0585ff8c54445a58a0ffc9c5c93f2580}{00020}} \textcolor{keywordtype}{int} \mbox{\hyperlink{classbouton_a0585ff8c54445a58a0ffc9c5c93f2580}{bouton::charge}}()}
+\DoxyCodeLine{00021 \{}
+\DoxyCodeLine{00022     \textcolor{keywordflow}{if}(io-\/>bouton\_charge==1)}
+\DoxyCodeLine{00023         bout = 1;}
+\DoxyCodeLine{00024     \textcolor{keywordflow}{else}}
+\DoxyCodeLine{00025         bout = 0;}
+\DoxyCodeLine{00026     \textcolor{keywordflow}{return} bout;}
+\DoxyCodeLine{00027 }
+\DoxyCodeLine{00028 \}}
+\DoxyCodeLine{00029 \textcolor{comment}{/*-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/*/}}
+\DoxyCodeLine{\Hypertarget{bouton_8cpp_source_l00030}\mbox{\hyperlink{classbouton_a8876eb02e83fb5373c5e89df1ff98094}{00030}} \textcolor{keywordtype}{int} \mbox{\hyperlink{classbouton_a8876eb02e83fb5373c5e89df1ff98094}{bouton::stop}}()}
+\DoxyCodeLine{00031 \{}
+\DoxyCodeLine{00032     \textcolor{keywordflow}{if}(io-\/>bouton\_stop==1)}
+\DoxyCodeLine{00033         bout = 1;}
+\DoxyCodeLine{00034     \textcolor{keywordflow}{else}}
+\DoxyCodeLine{00035         bout = 0;}
+\DoxyCodeLine{00036     \textcolor{keywordflow}{return} bout;}
+\DoxyCodeLine{00037 \}}
+
+\end{DoxyCode}

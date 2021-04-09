@@ -1,0 +1,59 @@
+\hypertarget{voyants_8cpp_source}{}\doxysection{voyants.\+cpp}
+\label{voyants_8cpp_source}\index{C:/Users/zimou/Desktop/c++/projet\_uml\_c++/voyants.cpp@{C:/Users/zimou/Desktop/c++/projet\_uml\_c++/voyants.cpp}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001 }
+\DoxyCodeLine{00011 \textcolor{preprocessor}{\#include <unistd.h>}}
+\DoxyCodeLine{00012 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{voyants_8h}{voyants.h}}"{}}}
+\DoxyCodeLine{00013 }
+\DoxyCodeLine{00014 \textcolor{comment}{/*-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/*/}}
+\DoxyCodeLine{\Hypertarget{voyants_8cpp_source_l00015}\mbox{\hyperlink{classvoyants_a3bd2e420c4b052e22b935e1c4e0691ae}{00015}} \mbox{\hyperlink{classvoyants_a3bd2e420c4b052e22b935e1c4e0691ae}{voyants::voyants}}()\{}
+\DoxyCodeLine{00016     }
+\DoxyCodeLine{00017     io=acces\_memoire(\&shmid);}
+\DoxyCodeLine{00018 }
+\DoxyCodeLine{00019 \}}
+\DoxyCodeLine{00020 }
+\DoxyCodeLine{00021 \textcolor{comment}{/*-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/*/}}
+\DoxyCodeLine{\Hypertarget{voyants_8cpp_source_l00022}\mbox{\hyperlink{classvoyants_afb7a88dd4c592801f7f2e5f2cacb8740}{00022}} \textcolor{keywordtype}{void} \mbox{\hyperlink{classvoyants_afb7a88dd4c592801f7f2e5f2cacb8740}{voyants:: set\_charge}}()}
+\DoxyCodeLine{00023 \{}
+\DoxyCodeLine{00024 }
+\DoxyCodeLine{00025     io-\/>led\_charge=VERT;}
+\DoxyCodeLine{00026 \}}
+\DoxyCodeLine{00027 }
+\DoxyCodeLine{00028 \textcolor{comment}{/*-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/*/}}
+\DoxyCodeLine{\Hypertarget{voyants_8cpp_source_l00029}\mbox{\hyperlink{classvoyants_a1bb039029fbc42939d2fdcf4a93c70dc}{00029}} \textcolor{keywordtype}{void} \mbox{\hyperlink{classvoyants_a1bb039029fbc42939d2fdcf4a93c70dc}{voyants::set\_dispo}}()}
+\DoxyCodeLine{00030 \{}
+\DoxyCodeLine{00031 }
+\DoxyCodeLine{00032     io-\/>led\_dispo=VERT;}
+\DoxyCodeLine{00033 \}}
+\DoxyCodeLine{00034 }
+\DoxyCodeLine{00035 \textcolor{comment}{/*-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/*/}}
+\DoxyCodeLine{\Hypertarget{voyants_8cpp_source_l00036}\mbox{\hyperlink{classvoyants_afc141b1a01b44acc6769ec52da51ae0b}{00036}} \textcolor{keywordtype}{void} \mbox{\hyperlink{classvoyants_afc141b1a01b44acc6769ec52da51ae0b}{voyants::blink\_charge}}()}
+\DoxyCodeLine{00037 \{}
+\DoxyCodeLine{00038     \textcolor{keywordtype}{int} i=0;    }
+\DoxyCodeLine{00039     \textcolor{keywordflow}{for}(i=0;i<8;i++)}
+\DoxyCodeLine{00040     \{}
+\DoxyCodeLine{00041         }
+\DoxyCodeLine{00042         usleep(500000);}
+\DoxyCodeLine{00043         io-\/>led\_charge=VERT;}
+\DoxyCodeLine{00044         usleep(500000);}
+\DoxyCodeLine{00045         io-\/>led\_charge=OFF; }
+\DoxyCodeLine{00046     \}}
+\DoxyCodeLine{00047 \}}
+\DoxyCodeLine{00048 }
+\DoxyCodeLine{00049 \textcolor{comment}{/*-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/*/}}
+\DoxyCodeLine{\Hypertarget{voyants_8cpp_source_l00050}\mbox{\hyperlink{classvoyants_ad94597191e93dbd2a6ff5e3ff9fd1234}{00050}} \textcolor{keywordtype}{void} \mbox{\hyperlink{classvoyants_ad94597191e93dbd2a6ff5e3ff9fd1234}{voyants::blink\_chargeR}}()}
+\DoxyCodeLine{00051 \{}
+\DoxyCodeLine{00052     \textcolor{keywordtype}{int} i=0;    }
+\DoxyCodeLine{00053     \textcolor{keywordflow}{for}(i=0;i<8;i++)}
+\DoxyCodeLine{00054     \{}
+\DoxyCodeLine{00055         }
+\DoxyCodeLine{00056         usleep(500000);}
+\DoxyCodeLine{00057         io-\/>led\_defaut=ROUGE;}
+\DoxyCodeLine{00058         usleep(500000);}
+\DoxyCodeLine{00059         io-\/>led\_defaut=OFF; }
+\DoxyCodeLine{00060     \}}
+\DoxyCodeLine{00061 \}}
+\DoxyCodeLine{00062 }
+
+\end{DoxyCode}

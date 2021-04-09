@@ -1,0 +1,201 @@
+\hypertarget{class_lecteur_carte}{}\doxysection{Lecteur\+Carte Class Reference}
+\label{class_lecteur_carte}\index{LecteurCarte@{LecteurCarte}}
+
+
+classe representant le lecteur carte  
+
+
+
+
+{\ttfamily \#include $<$lecteurcarte.\+h$>$}
+
+
+
+Collaboration diagram for Lecteur\+Carte\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=200pt]{class_lecteur_carte__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_lecteur_carte_abbbb461e7a4e40468f27542a9cc65a22}{Lecteur\+Carte}} ()
+\begin{DoxyCompactList}\small\item\em Constructeur. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_lecteur_carte_a90e4f75fb492935ebaf5f908173763af}{lire\+\_\+carte}} ()
+\begin{DoxyCompactList}\small\item\em gestion du lecteur de carte \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_lecteur_carte_af26760b222fb8ce5cce9a467a82ee7da}{get\+\_\+numero\+\_\+carte}} ()
+\begin{DoxyCompactList}\small\item\em acces au numero de la carte \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_lecteur_carte_aa95d95417518eda631e52428302637fc}{ajout}} (int a)
+\begin{DoxyCompactList}\small\item\em ajout de client \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_lecteur_carte_ad711680ca62caa5efa26f73f70fe9839}{suppr}} (int a)
+\begin{DoxyCompactList}\small\item\em suppression de client \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classbase__clients}{base\+\_\+clients}} \mbox{\hyperlink{class_lecteur_carte_a8547fd2666ffcbf93a9e8146085ed637}{lecture\+\_\+base}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+classe representant le lecteur carte 
+
+La classe gere la lecture des cartes clients 
+
+Definition at line \mbox{\hyperlink{lecteurcarte_8h_source_l00035}{35}} of file \mbox{\hyperlink{lecteurcarte_8h_source}{lecteurcarte.\+h}}.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_lecteur_carte_abbbb461e7a4e40468f27542a9cc65a22}\label{class_lecteur_carte_abbbb461e7a4e40468f27542a9cc65a22}} 
+\index{LecteurCarte@{LecteurCarte}!LecteurCarte@{LecteurCarte}}
+\index{LecteurCarte@{LecteurCarte}!LecteurCarte@{LecteurCarte}}
+\doxysubsubsection{\texorpdfstring{LecteurCarte()}{LecteurCarte()}}
+{\footnotesize\ttfamily Lecteur\+Carte\+::\+Lecteur\+Carte (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Constructeur. 
+
+Constructeur de la classe \mbox{\hyperlink{class_lecteur_carte}{Lecteur\+Carte}} 
+
+Definition at line \mbox{\hyperlink{lecteurcarte_8cpp_source_l00016}{16}} of file \mbox{\hyperlink{lecteurcarte_8cpp_source}{lecteurcarte.\+cpp}}.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_lecteur_carte_aa95d95417518eda631e52428302637fc}\label{class_lecteur_carte_aa95d95417518eda631e52428302637fc}} 
+\index{LecteurCarte@{LecteurCarte}!ajout@{ajout}}
+\index{ajout@{ajout}!LecteurCarte@{LecteurCarte}}
+\doxysubsubsection{\texorpdfstring{ajout()}{ajout()}}
+{\footnotesize\ttfamily void Lecteur\+Carte\+::ajout (\begin{DoxyParamCaption}\item[{int}]{a }\end{DoxyParamCaption})}
+
+
+
+ajout de client 
+
+Methode qui permet d\textquotesingle{}utiliser la methode de la classe \mbox{\hyperlink{classbase__client}{base\+\_\+client}} ajouter\+\_\+client 
+\begin{DoxyParams}{Parameters}
+{\em int} & a \+: le numéro du client à ajouter \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line \mbox{\hyperlink{lecteurcarte_8cpp_source_l00140}{140}} of file \mbox{\hyperlink{lecteurcarte_8cpp_source}{lecteurcarte.\+cpp}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=322pt]{class_lecteur_carte_aa95d95417518eda631e52428302637fc_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=253pt]{class_lecteur_carte_aa95d95417518eda631e52428302637fc_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_lecteur_carte_af26760b222fb8ce5cce9a467a82ee7da}\label{class_lecteur_carte_af26760b222fb8ce5cce9a467a82ee7da}} 
+\index{LecteurCarte@{LecteurCarte}!get\_numero\_carte@{get\_numero\_carte}}
+\index{get\_numero\_carte@{get\_numero\_carte}!LecteurCarte@{LecteurCarte}}
+\doxysubsubsection{\texorpdfstring{get\_numero\_carte()}{get\_numero\_carte()}}
+{\footnotesize\ttfamily int Lecteur\+Carte\+::get\+\_\+numero\+\_\+carte (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+acces au numero de la carte 
+
+Methode qui permet d\textquotesingle{}obtenir le numero de carte meme s\textquotesingle{}il est privé 
+
+Definition at line \mbox{\hyperlink{lecteurcarte_8cpp_source_l00135}{135}} of file \mbox{\hyperlink{lecteurcarte_8cpp_source}{lecteurcarte.\+cpp}}.
+
+\mbox{\Hypertarget{class_lecteur_carte_a90e4f75fb492935ebaf5f908173763af}\label{class_lecteur_carte_a90e4f75fb492935ebaf5f908173763af}} 
+\index{LecteurCarte@{LecteurCarte}!lire\_carte@{lire\_carte}}
+\index{lire\_carte@{lire\_carte}!LecteurCarte@{LecteurCarte}}
+\doxysubsubsection{\texorpdfstring{lire\_carte()}{lire\_carte()}}
+{\footnotesize\ttfamily void Lecteur\+Carte\+::lire\+\_\+carte (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+gestion du lecteur de carte 
+
+Methode qui permet de gerer le lecteur de carte et la comunication entre les objets des autre classes 
+
+Definition at line \mbox{\hyperlink{lecteurcarte_8cpp_source_l00027}{27}} of file \mbox{\hyperlink{lecteurcarte_8cpp_source}{lecteurcarte.\+cpp}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_lecteur_carte_a90e4f75fb492935ebaf5f908173763af_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=245pt]{class_lecteur_carte_a90e4f75fb492935ebaf5f908173763af_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_lecteur_carte_ad711680ca62caa5efa26f73f70fe9839}\label{class_lecteur_carte_ad711680ca62caa5efa26f73f70fe9839}} 
+\index{LecteurCarte@{LecteurCarte}!suppr@{suppr}}
+\index{suppr@{suppr}!LecteurCarte@{LecteurCarte}}
+\doxysubsubsection{\texorpdfstring{suppr()}{suppr()}}
+{\footnotesize\ttfamily void Lecteur\+Carte\+::suppr (\begin{DoxyParamCaption}\item[{int}]{a }\end{DoxyParamCaption})}
+
+
+
+suppression de client 
+
+Methode qui permet d\textquotesingle{}utiliser la methode de la classe \mbox{\hyperlink{classbase__client}{base\+\_\+client}} supprimer\+\_\+client 
+\begin{DoxyParams}{Parameters}
+{\em int} & a \+: le numéro du client à supprimer \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line \mbox{\hyperlink{lecteurcarte_8cpp_source_l00145}{145}} of file \mbox{\hyperlink{lecteurcarte_8cpp_source}{lecteurcarte.\+cpp}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=338pt]{class_lecteur_carte_ad711680ca62caa5efa26f73f70fe9839_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=256pt]{class_lecteur_carte_ad711680ca62caa5efa26f73f70fe9839_icgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_lecteur_carte_a8547fd2666ffcbf93a9e8146085ed637}\label{class_lecteur_carte_a8547fd2666ffcbf93a9e8146085ed637}} 
+\index{LecteurCarte@{LecteurCarte}!lecture\_base@{lecture\_base}}
+\index{lecture\_base@{lecture\_base}!LecteurCarte@{LecteurCarte}}
+\doxysubsubsection{\texorpdfstring{lecture\_base}{lecture\_base}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classbase__clients}{base\+\_\+clients}} Lecteur\+Carte\+::lecture\+\_\+base}
+
+
+
+Definition at line \mbox{\hyperlink{lecteurcarte_8h_source_l00048}{48}} of file \mbox{\hyperlink{lecteurcarte_8h_source}{lecteurcarte.\+h}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/zimou/\+Desktop/c++/projet\+\_\+uml\+\_\+c++/\mbox{\hyperlink{lecteurcarte_8h}{lecteurcarte.\+h}}\item 
+C\+:/\+Users/zimou/\+Desktop/c++/projet\+\_\+uml\+\_\+c++/\mbox{\hyperlink{lecteurcarte_8cpp}{lecteurcarte.\+cpp}}\end{DoxyCompactItemize}

@@ -1,0 +1,153 @@
+\hypertarget{classbase__clients}{}\doxysection{base\+\_\+clients Class Reference}
+\label{classbase__clients}\index{base\_clients@{base\_clients}}
+
+
+{\ttfamily \#include $<$base\+\_\+client.\+h$>$}
+
+
+
+Collaboration diagram for base\+\_\+clients\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=183pt]{classbase__clients__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classbase__clients_a9ab12c73b7ce7e5480802e531512d77a}{base\+\_\+clients}} ()
+\begin{DoxyCompactList}\small\item\em Constructeur. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classbase__clients_a90f0ccbdbc34a1f7931d134049f3c74d}{authentifier}} (int a)
+\begin{DoxyCompactList}\small\item\em authetification d\textquotesingle{}un client \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classbase__clients_a0148fa053f3f95a491e8b569c5d09593}{ajouter\+\_\+client}} (int a)
+\begin{DoxyCompactList}\small\item\em Ajout d\textquotesingle{}un client. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classbase__clients_a6259873e55939345853ed85bca3b9be1}{supprimer\+\_\+client}} (int a)
+\begin{DoxyCompactList}\small\item\em suppression d\textquotesingle{}un client \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+
+
+Definition at line \mbox{\hyperlink{base__client_8h_source_l00030}{30}} of file \mbox{\hyperlink{base__client_8h_source}{base\+\_\+client.\+h}}.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classbase__clients_a9ab12c73b7ce7e5480802e531512d77a}\label{classbase__clients_a9ab12c73b7ce7e5480802e531512d77a}} 
+\index{base\_clients@{base\_clients}!base\_clients@{base\_clients}}
+\index{base\_clients@{base\_clients}!base\_clients@{base\_clients}}
+\doxysubsubsection{\texorpdfstring{base\_clients()}{base\_clients()}}
+{\footnotesize\ttfamily base\+\_\+clients\+::base\+\_\+clients (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Constructeur. 
+
+Constructeur de la classe \mbox{\hyperlink{classbase__client}{base\+\_\+client}}
+
+Permet de lire le fichier qui contient les numéro clients et de les stocker dans le vecteur liste\+\_\+numéro 
+
+Definition at line \mbox{\hyperlink{base__client_8cpp_source_l00014}{14}} of file \mbox{\hyperlink{base__client_8cpp_source}{base\+\_\+client.\+cpp}}.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classbase__clients_a0148fa053f3f95a491e8b569c5d09593}\label{classbase__clients_a0148fa053f3f95a491e8b569c5d09593}} 
+\index{base\_clients@{base\_clients}!ajouter\_client@{ajouter\_client}}
+\index{ajouter\_client@{ajouter\_client}!base\_clients@{base\_clients}}
+\doxysubsubsection{\texorpdfstring{ajouter\_client()}{ajouter\_client()}}
+{\footnotesize\ttfamily void base\+\_\+clients\+::ajouter\+\_\+client (\begin{DoxyParamCaption}\item[{int}]{a }\end{DoxyParamCaption})}
+
+
+
+Ajout d\textquotesingle{}un client. 
+
+Methode qui permet d\textquotesingle{}ajouter un numéro client a liste des anciens clients
+
+
+\begin{DoxyParams}{Parameters}
+{\em int} & a \+: le numéro du client à ajouter \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line \mbox{\hyperlink{base__client_8cpp_source_l00049}{49}} of file \mbox{\hyperlink{base__client_8cpp_source}{base\+\_\+client.\+cpp}}.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classbase__clients_a0148fa053f3f95a491e8b569c5d09593_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classbase__clients_a90f0ccbdbc34a1f7931d134049f3c74d}\label{classbase__clients_a90f0ccbdbc34a1f7931d134049f3c74d}} 
+\index{base\_clients@{base\_clients}!authentifier@{authentifier}}
+\index{authentifier@{authentifier}!base\_clients@{base\_clients}}
+\doxysubsubsection{\texorpdfstring{authentifier()}{authentifier()}}
+{\footnotesize\ttfamily int base\+\_\+clients\+::authentifier (\begin{DoxyParamCaption}\item[{int}]{a }\end{DoxyParamCaption})}
+
+
+
+authetification d\textquotesingle{}un client 
+
+Methode qui permet d\textquotesingle{} authentifier un numéro de carte
+
+
+\begin{DoxyParams}{Parameters}
+{\em int} & a \+: le numéro de la carte à authentifier\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true si numero present dans la liste, sinon renvoi false 
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{base__client_8cpp_source_l00031}{31}} of file \mbox{\hyperlink{base__client_8cpp_source}{base\+\_\+client.\+cpp}}.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classbase__clients_a90f0ccbdbc34a1f7931d134049f3c74d_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classbase__clients_a6259873e55939345853ed85bca3b9be1}\label{classbase__clients_a6259873e55939345853ed85bca3b9be1}} 
+\index{base\_clients@{base\_clients}!supprimer\_client@{supprimer\_client}}
+\index{supprimer\_client@{supprimer\_client}!base\_clients@{base\_clients}}
+\doxysubsubsection{\texorpdfstring{supprimer\_client()}{supprimer\_client()}}
+{\footnotesize\ttfamily void base\+\_\+clients\+::supprimer\+\_\+client (\begin{DoxyParamCaption}\item[{int}]{a }\end{DoxyParamCaption})}
+
+
+
+suppression d\textquotesingle{}un client 
+
+Methode qui permet de supprimer un numéro client de la ~\newline
+ liste des anciens clients
+
+
+\begin{DoxyParams}{Parameters}
+{\em int} & a \+: le numéro du client à supprimer \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line \mbox{\hyperlink{base__client_8cpp_source_l00060}{60}} of file \mbox{\hyperlink{base__client_8cpp_source}{base\+\_\+client.\+cpp}}.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classbase__clients_a6259873e55939345853ed85bca3b9be1_icgraph}
+\end{center}
+\end{figure}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/zimou/\+Desktop/c++/projet\+\_\+uml\+\_\+c++/\mbox{\hyperlink{base__client_8h}{base\+\_\+client.\+h}}\item 
+C\+:/\+Users/zimou/\+Desktop/c++/projet\+\_\+uml\+\_\+c++/\mbox{\hyperlink{base__client_8cpp}{base\+\_\+client.\+cpp}}\end{DoxyCompactItemize}

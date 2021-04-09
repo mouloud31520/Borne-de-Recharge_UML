@@ -1,0 +1,33 @@
+\hypertarget{timer_8cpp_source}{}\doxysection{timer.\+cpp}
+\label{timer_8cpp_source}\index{C:/Users/zimou/Desktop/c++/projet\_uml\_c++/timer.cpp@{C:/Users/zimou/Desktop/c++/projet\_uml\_c++/timer.cpp}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001 }
+\DoxyCodeLine{00011 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{timer_8h}{timer.h}}"{}}}
+\DoxyCodeLine{00012 }
+\DoxyCodeLine{\Hypertarget{timer_8cpp_source_l00014}\mbox{\hyperlink{classtimer_ae536faf93e02933cd025a6fbcbb48d0a}{00014}} \mbox{\hyperlink{classtimer_ae536faf93e02933cd025a6fbcbb48d0a}{timer::timer}}()}
+\DoxyCodeLine{00015 \{}
+\DoxyCodeLine{00016     io=acces\_memoire(\&shmid);}
+\DoxyCodeLine{00017     \textcolor{keywordflow}{if}(io==NULL)}
+\DoxyCodeLine{00018     cout<<\textcolor{stringliteral}{"{}Erreur d'initialisation"{}}<<endl;}
+\DoxyCodeLine{00019 \}}
+\DoxyCodeLine{00020 }
+\DoxyCodeLine{00021 \textcolor{comment}{/*-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/*/}}
+\DoxyCodeLine{\Hypertarget{timer_8cpp_source_l00022}\mbox{\hyperlink{classtimer_a760e6904b6e430cf5cc8270ae3028cb0}{00022}}  \textcolor{keywordtype}{void} \mbox{\hyperlink{classtimer_a760e6904b6e430cf5cc8270ae3028cb0}{timer::initialiser}}()}
+\DoxyCodeLine{00023 \{}
+\DoxyCodeLine{00024     depart\_timer=io-\/>timer\_sec;}
+\DoxyCodeLine{00025 \}}
+\DoxyCodeLine{00026 }
+\DoxyCodeLine{00027  \textcolor{comment}{/*-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/*/}}
+\DoxyCodeLine{\Hypertarget{timer_8cpp_source_l00028}\mbox{\hyperlink{classtimer_a1ace143c3ef9b80ba80ead2d0a7f07e2}{00028}} \textcolor{keywordtype}{int} \mbox{\hyperlink{classtimer_a1ace143c3ef9b80ba80ead2d0a7f07e2}{timer::timer\_valeur}}()}
+\DoxyCodeLine{00029 \{}
+\DoxyCodeLine{00030 \textcolor{keywordflow}{return} (io-\/>timer\_sec)-\/depart\_timer;}
+\DoxyCodeLine{00031 \}}
+\DoxyCodeLine{00032 }
+\DoxyCodeLine{00033 \textcolor{comment}{/*-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/*/}}
+\DoxyCodeLine{\Hypertarget{timer_8cpp_source_l00034}\mbox{\hyperlink{classtimer_a1e6f0c8e7b23d7bd037ac9021f693aec}{00034}} \textcolor{keywordtype}{void} \mbox{\hyperlink{classtimer_a1e6f0c8e7b23d7bd037ac9021f693aec}{timer::timer\_raz}}()}
+\DoxyCodeLine{00035 \{}
+\DoxyCodeLine{00036 depart\_timer=0;}
+\DoxyCodeLine{00037 \}}
+
+\end{DoxyCode}

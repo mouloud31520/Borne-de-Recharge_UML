@@ -1,0 +1,88 @@
+\hypertarget{base__client_8cpp_source}{}\doxysection{base\+\_\+client.\+cpp}
+\label{base__client_8cpp_source}\index{C:/Users/zimou/Desktop/c++/projet\_uml\_c++/base\_client.cpp@{C:/Users/zimou/Desktop/c++/projet\_uml\_c++/base\_client.cpp}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001 }
+\DoxyCodeLine{00010 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{base__client_8h}{base\_client.h}}"{}}}
+\DoxyCodeLine{00011 }
+\DoxyCodeLine{00012 }
+\DoxyCodeLine{00013 \textcolor{comment}{/*-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/*/}}
+\DoxyCodeLine{\Hypertarget{base__client_8cpp_source_l00014}\mbox{\hyperlink{classbase__clients_a9ab12c73b7ce7e5480802e531512d77a}{00014}} \mbox{\hyperlink{classbase__clients_a9ab12c73b7ce7e5480802e531512d77a}{base\_clients::base\_clients}}()}
+\DoxyCodeLine{00015 \{}
+\DoxyCodeLine{00016     \textcolor{keywordtype}{int} a=0;}
+\DoxyCodeLine{00017     ifstream entre (\textcolor{stringliteral}{"{}base.txt"{}});}
+\DoxyCodeLine{00018     \textcolor{keywordflow}{while}(!entre.eof())}
+\DoxyCodeLine{00019         \{}
+\DoxyCodeLine{00020         entre >>a;}
+\DoxyCodeLine{00021         liste\_numero.push\_back(a);}
+\DoxyCodeLine{00022         \}}
+\DoxyCodeLine{00023 }
+\DoxyCodeLine{00024 \}}
+\DoxyCodeLine{00025 }
+\DoxyCodeLine{00026 \textcolor{comment}{/*-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/*/}}
+\DoxyCodeLine{00027 }
+\DoxyCodeLine{00028 \textcolor{comment}{//pour authentification}}
+\DoxyCodeLine{00029 }
+\DoxyCodeLine{00030 }
+\DoxyCodeLine{\Hypertarget{base__client_8cpp_source_l00031}\mbox{\hyperlink{classbase__clients_a90f0ccbdbc34a1f7931d134049f3c74d}{00031}} \textcolor{keywordtype}{int} \mbox{\hyperlink{classbase__clients_a90f0ccbdbc34a1f7931d134049f3c74d}{base\_clients::authentifier}} (\textcolor{keywordtype}{int} a)}
+\DoxyCodeLine{00032 \{   \textcolor{keywordtype}{int} ok=0;}
+\DoxyCodeLine{00033     \textcolor{keywordflow}{for}(\textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{int} i=0; i< liste\_numero.size(); i++)}
+\DoxyCodeLine{00034         \{}
+\DoxyCodeLine{00035             \textcolor{keywordflow}{if}(liste\_numero.at(i) == a)}
+\DoxyCodeLine{00036               \{}
+\DoxyCodeLine{00037                ok=1;}
+\DoxyCodeLine{00038               \}}
+\DoxyCodeLine{00039         \}}
+\DoxyCodeLine{00040     \textcolor{keywordflow}{if}(ok != 1)}
+\DoxyCodeLine{00041         \{}
+\DoxyCodeLine{00042             ok=0;}
+\DoxyCodeLine{00043         \}}
+\DoxyCodeLine{00044 \textcolor{keywordflow}{return} ok;}
+\DoxyCodeLine{00045 \}}
+\DoxyCodeLine{00046 }
+\DoxyCodeLine{00047 \textcolor{comment}{//zone admin}}
+\DoxyCodeLine{00048 \textcolor{comment}{/*-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/*/}}
+\DoxyCodeLine{\Hypertarget{base__client_8cpp_source_l00049}\mbox{\hyperlink{classbase__clients_a0148fa053f3f95a491e8b569c5d09593}{00049}} \textcolor{keywordtype}{void} \mbox{\hyperlink{classbase__clients_a0148fa053f3f95a491e8b569c5d09593}{base\_clients::ajouter\_client}} (\textcolor{keywordtype}{int} a)}
+\DoxyCodeLine{00050 \{}
+\DoxyCodeLine{00051  liste\_numero.push\_back(a);}
+\DoxyCodeLine{00052 }
+\DoxyCodeLine{00053 ofstream entre(\textcolor{stringliteral}{"{}base.txt"{}});}
+\DoxyCodeLine{00054 \textcolor{keywordflow}{for} (\textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{int} i=0 ; i< liste\_numero.size() ; i++)}
+\DoxyCodeLine{00055 entre <<liste\_numero.at(i)<<endl; }
+\DoxyCodeLine{00056 \}}
+\DoxyCodeLine{00057 }
+\DoxyCodeLine{00058 }
+\DoxyCodeLine{00059 \textcolor{comment}{/*-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/*/}}
+\DoxyCodeLine{\Hypertarget{base__client_8cpp_source_l00060}\mbox{\hyperlink{classbase__clients_a6259873e55939345853ed85bca3b9be1}{00060}} \textcolor{keywordtype}{void} \mbox{\hyperlink{classbase__clients_a6259873e55939345853ed85bca3b9be1}{base\_clients::supprimer\_client}}(\textcolor{keywordtype}{int} a)}
+\DoxyCodeLine{00061 \{}
+\DoxyCodeLine{00062 \textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{int} j=0;}
+\DoxyCodeLine{00063 }
+\DoxyCodeLine{00064 \textcolor{keywordflow}{for} (\textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{int} i=0 ; i< liste\_numero.size() ; i++)}
+\DoxyCodeLine{00065 }
+\DoxyCodeLine{00066     \{   }
+\DoxyCodeLine{00067 }
+\DoxyCodeLine{00068      \textcolor{keywordflow}{if}(liste\_numero.at(i) == a)}
+\DoxyCodeLine{00069         \{}
+\DoxyCodeLine{00070             j=i;}
+\DoxyCodeLine{00071         \} }
+\DoxyCodeLine{00072     \}}
+\DoxyCodeLine{00073 }
+\DoxyCodeLine{00074 vector<int>::iterator vi =liste\_numero.begin()+(j-\/1);}
+\DoxyCodeLine{00075 liste\_numero.erase(vi);}
+\DoxyCodeLine{00076 }
+\DoxyCodeLine{00077 }
+\DoxyCodeLine{00078 ofstream entre(\textcolor{stringliteral}{"{}base.txt"{}});}
+\DoxyCodeLine{00079 }
+\DoxyCodeLine{00080 \textcolor{keywordflow}{for} (\textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{int} i=0 ; i< liste\_numero.size() ; i++)}
+\DoxyCodeLine{00081 entre <<liste\_numero.at(i)<<endl; }
+\DoxyCodeLine{00082 }
+\DoxyCodeLine{00083 \}}
+\DoxyCodeLine{00084 }
+\DoxyCodeLine{00085 }
+\DoxyCodeLine{00086 }
+\DoxyCodeLine{00087 }
+\DoxyCodeLine{00088 }
+\DoxyCodeLine{00089 }
+\DoxyCodeLine{00090 }
+
+\end{DoxyCode}

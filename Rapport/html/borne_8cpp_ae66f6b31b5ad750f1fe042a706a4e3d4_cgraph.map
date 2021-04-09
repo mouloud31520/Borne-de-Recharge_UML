@@ -1,0 +1,23 @@
+<map id="main" name="main">
+<area shape="rect" id="node1" title=" " alt="" coords="5,325,56,351"/>
+<area shape="rect" id="node2" href="$class_lecteur_carte.html#aa95d95417518eda631e52428302637fc" title="ajout de client" alt="" coords="106,139,238,166"/>
+<area shape="rect" id="node4" href="$class_lecteur_carte.html#a90e4f75fb492935ebaf5f908173763af" title="gestion du lecteur de carte" alt="" coords="111,317,233,359"/>
+<area shape="rect" id="node20" href="$class_lecteur_carte.html#ad711680ca62caa5efa26f73f70fe9839" title="suppression de client" alt="" coords="104,510,240,537"/>
+<area shape="rect" id="node3" href="$classbase__clients.html#a0148fa053f3f95a491e8b569c5d09593" title="Ajout d&#39;un client." alt="" coords="314,5,457,47"/>
+<area shape="rect" id="node5" href="$classbase__clients.html#a90f0ccbdbc34a1f7931d134049f3c74d" title="authetification d&#39;un client" alt="" coords="302,375,469,402"/>
+<area shape="rect" id="node6" href="$classvoyants.html#afc141b1a01b44acc6769ec52da51ae0b" title="clignotement de la led charge" alt="" coords="312,426,459,453"/>
+<area shape="rect" id="node7" href="$classvoyants.html#ad94597191e93dbd2a6ff5e3ff9fd1234" title="clignotement de la led charge" alt="" coords="307,477,463,503"/>
+<area shape="rect" id="node8" href="$classbouton.html#a0585ff8c54445a58a0ffc9c5c93f2580" title="appui sur charge" alt="" coords="331,527,439,554"/>
+<area shape="rect" id="node9" href="$classgenerateur__save.html#afcd2ef2afe23c5c0a31d1786dcfd11e7" title="lancemment de la MEF" alt="" coords="302,578,469,605"/>
+<area shape="rect" id="node14" href="$classbouton.html#a8876eb02e83fb5373c5e89df1ff98094" title="appui sur stop" alt="" coords="777,71,872,98"/>
+<area shape="rect" id="node15" href="$classgenerateur__save.html#a66d2036681c611dd116e89187a3f365f" title="obtention de la valeur de la tension" alt="" coords="741,122,908,149"/>
+<area shape="rect" id="node16" href="$classgenerateur__save.html#ad3883dec46e1e3cc8df53645fefcf493" title="deconecter le vehicule de la prise" alt="" coords="288,173,483,199"/>
+<area shape="rect" id="node17" href="$classtimer.html#a760e6904b6e430cf5cc8270ae3028cb0" title="initialisation du timer" alt="" coords="330,223,441,250"/>
+<area shape="rect" id="node18" href="$classtimer.html#a1ace143c3ef9b80ba80ead2d0a7f07e2" title="valeur d timer" alt="" coords="321,274,449,301"/>
+<area shape="rect" id="node19" href="$classprise.html#afabd7af7fecbc9a23012a2d8d2b6e83c" title="verouillage de la trappe" alt="" coords="310,325,461,351"/>
+<area shape="rect" id="node10" href="$classgenerateur__save.html#aa6d167cc0f2747022428e963fd2d117a" title="gestion de la machine a etat fini" alt="" coords="531,198,676,225"/>
+<area shape="rect" id="node11" href="$classgenerateur__save.html#a8877afbf0536685d6c6f97066b39fe0e" title="fermeture du contacteur AC" alt="" coords="732,223,917,250"/>
+<area shape="rect" id="node12" href="$classgenerateur__save.html#a2d6918edf51ed5529e4c6638f001a25d" title="generateur de PWM" alt="" coords="724,274,925,301"/>
+<area shape="rect" id="node13" href="$classgenerateur__save.html#a001b7830a5199462656a7a6df6adbd33" title="ouvertur du contacteur AC" alt="" coords="735,173,914,199"/>
+<area shape="rect" id="node21" href="$classbase__clients.html#a6259873e55939345853ed85bca3b9be1" title="suppression d&#39;un client" alt="" coords="305,629,465,671"/>
+</map>

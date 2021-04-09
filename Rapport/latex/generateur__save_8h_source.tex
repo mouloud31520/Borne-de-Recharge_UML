@@ -1,0 +1,47 @@
+\hypertarget{generateur__save_8h_source}{}\doxysection{generateur\+\_\+save.\+h}
+\label{generateur__save_8h_source}\index{C:/Users/zimou/Desktop/c++/projet\_uml\_c++/generateur\_save.h@{C:/Users/zimou/Desktop/c++/projet\_uml\_c++/generateur\_save.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001 \textcolor{preprocessor}{\#ifndef GENERATEUR\_SAVE\_H}}
+\DoxyCodeLine{00002 \textcolor{preprocessor}{\#define GENERATEUR\_SAVE\_H}}
+\DoxyCodeLine{00003 }
+\DoxyCodeLine{00004 }
+\DoxyCodeLine{00012 \textcolor{preprocessor}{\#include <donnees\_borne.h>}}
+\DoxyCodeLine{00013 \textcolor{preprocessor}{\#include <memoire\_borne.h>}}
+\DoxyCodeLine{00014 \textcolor{preprocessor}{\#include <unistd.h>}}
+\DoxyCodeLine{00015 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{bouton_8h}{bouton.h}}"{}}}
+\DoxyCodeLine{00016 }
+\DoxyCodeLine{00020 \textcolor{keyword}{using namespace }std;}
+\DoxyCodeLine{00021 }
+\DoxyCodeLine{\Hypertarget{generateur__save_8h_source_l00028}\mbox{\hyperlink{classgenerateur__save}{00028}} \textcolor{keyword}{class }\mbox{\hyperlink{classgenerateur__save}{generateur\_save}}}
+\DoxyCodeLine{00029 \{}
+\DoxyCodeLine{00030 entrees *io;  \textcolor{comment}{/* structeur de memoire partagee pour communiquer avec le simulateur */}}
+\DoxyCodeLine{00031 }
+\DoxyCodeLine{00032 \textcolor{keywordtype}{int} shmid;}
+\DoxyCodeLine{00033 }
+\DoxyCodeLine{00034 \mbox{\hyperlink{classbouton}{bouton}} B;   \textcolor{comment}{/*objet de la classe bouton*/}}
+\DoxyCodeLine{00035 }
+\DoxyCodeLine{00036  \textcolor{keyword}{public}:}
+\DoxyCodeLine{00037  }
+\DoxyCodeLine{00044  \mbox{\hyperlink{classgenerateur__save}{generateur\_save}}();}
+\DoxyCodeLine{00045 }
+\DoxyCodeLine{00046 }
+\DoxyCodeLine{00055  \textcolor{keywordtype}{void} mef(); }
+\DoxyCodeLine{00056  }
+\DoxyCodeLine{00064 \textcolor{keywordtype}{float} tension(); }
+\DoxyCodeLine{00065 }
+\DoxyCodeLine{00073 \textcolor{keywordtype}{void} charger();}
+\DoxyCodeLine{00074 }
+\DoxyCodeLine{00082 \textcolor{keywordtype}{void} ouvrir\_AC();}
+\DoxyCodeLine{00083 }
+\DoxyCodeLine{00091 \textcolor{keywordtype}{void} fermer\_AC();}
+\DoxyCodeLine{00092 }
+\DoxyCodeLine{00101 \textcolor{keywordtype}{void} deconnecter();}
+\DoxyCodeLine{00102 }
+\DoxyCodeLine{00110 \textcolor{keywordtype}{void} generer\_pwm(pwm type);}
+\DoxyCodeLine{00111 \};}
+\DoxyCodeLine{00112 }
+\DoxyCodeLine{00113 }
+\DoxyCodeLine{00114 \textcolor{preprocessor}{\#endif }\textcolor{comment}{//GENERATEUR\_SAVE\_H}}
+
+\end{DoxyCode}

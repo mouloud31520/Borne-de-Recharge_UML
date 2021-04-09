@@ -1,0 +1,53 @@
+\hypertarget{lecteurcarte_8h_source}{}\doxysection{lecteurcarte.\+h}
+\label{lecteurcarte_8h_source}\index{C:/Users/zimou/Desktop/c++/projet\_uml\_c++/lecteurcarte.h@{C:/Users/zimou/Desktop/c++/projet\_uml\_c++/lecteurcarte.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001 \textcolor{preprocessor}{\#ifndef LECTEURCARTE\_H}}
+\DoxyCodeLine{00002 \textcolor{preprocessor}{\#define LECTEURCARTE\_H}}
+\DoxyCodeLine{00003 }
+\DoxyCodeLine{00011 \textcolor{preprocessor}{\#include <lcarte.h>}}
+\DoxyCodeLine{00012 \textcolor{preprocessor}{\#include <iostream>}}
+\DoxyCodeLine{00013 \textcolor{preprocessor}{\#include <unistd.h>}}
+\DoxyCodeLine{00014 \textcolor{preprocessor}{\#include <donnees\_borne.h>}}
+\DoxyCodeLine{00015 \textcolor{preprocessor}{\#include <memoire\_borne.h>}}
+\DoxyCodeLine{00016 \textcolor{preprocessor}{\#include <vector>}}
+\DoxyCodeLine{00017 \textcolor{preprocessor}{\#include <fstream>}}
+\DoxyCodeLine{00018 \textcolor{preprocessor}{\#include <string>}}
+\DoxyCodeLine{00019 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{base__client_8h}{base\_client.h}}"{}}}
+\DoxyCodeLine{00020 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{generateur__save_8h}{generateur\_save.h}}"{}}}
+\DoxyCodeLine{00021 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{prise_8h}{prise.h}}"{}}}
+\DoxyCodeLine{00022 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{bouton_8h}{bouton.h}}"{}}}
+\DoxyCodeLine{00023 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{timer_8h}{timer.h}}"{}}}
+\DoxyCodeLine{00024 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{voyants_8h}{voyants.h}}"{}}}
+\DoxyCodeLine{00025 }
+\DoxyCodeLine{00028 \textcolor{keyword}{using namespace }std;}
+\DoxyCodeLine{00029 }
+\DoxyCodeLine{\Hypertarget{lecteurcarte_8h_source_l00035}\mbox{\hyperlink{class_lecteur_carte}{00035}} \textcolor{keyword}{class }\mbox{\hyperlink{class_lecteur_carte}{LecteurCarte}}}
+\DoxyCodeLine{00036 \{   }
+\DoxyCodeLine{00037     \textcolor{keywordtype}{int} numero\_carte;}
+\DoxyCodeLine{00038     \textcolor{keywordtype}{int} shmid;}
+\DoxyCodeLine{00039     entrees *io;    \textcolor{comment}{/* structeur de memoire partagee pour communiquer avec le simulateur */}     }
+\DoxyCodeLine{00040     \mbox{\hyperlink{classvoyants}{voyants}} V;      \textcolor{comment}{/*objet de la classe voyants */}}
+\DoxyCodeLine{00041     \mbox{\hyperlink{classbouton}{bouton}} BT;      \textcolor{comment}{/*objet de la classe bouton*/}}
+\DoxyCodeLine{00042     \mbox{\hyperlink{classprise}{prise}} P;     \textcolor{comment}{/*objet de la classe prise */}}
+\DoxyCodeLine{00043     \mbox{\hyperlink{classtimer}{timer}} T;   \textcolor{comment}{/*objet de la classe timer */}}
+\DoxyCodeLine{00044     \mbox{\hyperlink{classgenerateur__save}{generateur\_save}} G;    \textcolor{comment}{/*objet de la classe generateur\_save */}}
+\DoxyCodeLine{00045      }
+\DoxyCodeLine{00046     }
+\DoxyCodeLine{00047   public : }
+\DoxyCodeLine{\Hypertarget{lecteurcarte_8h_source_l00048}\mbox{\hyperlink{class_lecteur_carte_a8547fd2666ffcbf93a9e8146085ed637}{00048}}     \mbox{\hyperlink{classbase__clients}{base\_clients}} \mbox{\hyperlink{class_lecteur_carte_a8547fd2666ffcbf93a9e8146085ed637}{lecture\_base}};  \textcolor{comment}{/*objet de la classe base\_client */}}
+\DoxyCodeLine{00049     }
+\DoxyCodeLine{00056     \mbox{\hyperlink{class_lecteur_carte}{LecteurCarte}}();}
+\DoxyCodeLine{00057 }
+\DoxyCodeLine{00066     \textcolor{keywordtype}{void} lire\_carte();}
+\DoxyCodeLine{00067     }
+\DoxyCodeLine{00076     \textcolor{keywordtype}{int} get\_numero\_carte();}
+\DoxyCodeLine{00077 }
+\DoxyCodeLine{00086     \textcolor{keywordtype}{void} ajout(\textcolor{keywordtype}{int} a);}
+\DoxyCodeLine{00087 }
+\DoxyCodeLine{00096     \textcolor{keywordtype}{void} suppr(\textcolor{keywordtype}{int} a);}
+\DoxyCodeLine{00097 \};}
+\DoxyCodeLine{00098 }
+\DoxyCodeLine{00099 \textcolor{preprocessor}{\#endif }\textcolor{comment}{// LECTEURCARTE\_H}}
+
+\end{DoxyCode}
